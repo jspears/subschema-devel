@@ -2,7 +2,20 @@
 ===
 @project.description@
 
-##Demo
+
+## Prerequisites
+Yarn - Npm should work but you are really on your own, yarn is better.
+OSX
+```sh
+  $ brew install yarn
+```
+or
+```sh
+  $ npm install -g yarn
+```
+
+
+## Demo
 See it in action [here](@demo.url@)
 
 Or run it 
@@ -10,17 +23,34 @@ Or run it
 ```sh
   git clone @project.repository@
   cd @project.name@
-  npm install
-  npm run server &
+  yarn install
+  yarn run server &
   open http://localhost:8082
 ```
 
-##Installation
-```sh
- $ npm install @project.name@
-``
+## Tests
+Using Karma
 
-##Usage
+For interactive tests
+
+```sh
+  $ yarn run karma
+```
+
+For non-interactive tests
+
+```sh
+ $ yarn run test
+```
+
+## Usage (as a component)
+
+Typical usage
+
+```sh
+$ yarn add @project.name@
+```
+
 ```jsx
 
  import React, {Component} from 'react';

@@ -25,6 +25,7 @@
     "subschema-project",
     "subschema-component-playground",
     "subschema-component-demo",
+    "subschema-markdown-it-loader",
     "subschema.wiki"
   ],
   "version": "2.2.3"

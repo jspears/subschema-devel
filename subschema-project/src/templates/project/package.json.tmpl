@@ -13,9 +13,11 @@
   "devDependencies": {
     "react":"@pkg.devDependencies.react@",
     "react-dom":"@pkg.devDependencies['react-dom']@",
-    "subschema":"^@pkg.version@",
     "subschema-dev-support":"^@pkg.version@"
   },
+  "dependencies":{
+    "subschema":"^@pkg.devDependencies['subschema-dev-support']@"
+  }
 
   "scripts": {
     "karma": "subschema-karma",

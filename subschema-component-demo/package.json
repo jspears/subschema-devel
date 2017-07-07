@@ -46,7 +46,8 @@
     "rimraf": "^2.6.1",
     "subschema-dev-support": "^2.2.3",
     "subschema-project": "^2.2.3",
-    "subschema-test-support": "^2.2.3"
+    "subschema-test-support": "^2.2.3",
+   "subschema-markdown-it-loader":"^2.2.3"
   },
   "subschema": {
     "include": [

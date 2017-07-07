@@ -6,11 +6,8 @@
   "scripts": {
     "server": "subschema-webpack-dev-server"
   },
-  "dependencies": {
-    "markdown-it": "^8.3.1",
-    "react-syntax-highlighter": "^5.6.2"
-  },
   "devDependencies": {
+    "subschema-markdown-it-loader": "^2.2.3",
     "subschema-dev-support": "^2.2.3"
   }
 }
