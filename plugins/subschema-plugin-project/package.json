@@ -12,6 +12,7 @@
     "clean": "subschema-clean"
   },
   "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.2.3",
     "jszip": "^3.1.5"
   },
   "devDependencies": {

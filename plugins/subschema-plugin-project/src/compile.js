@@ -1,16 +1,11 @@
 import { availablePlugins, transform } from 'Babel';
 import form from './form';
-import reactClassDisplayName from 'mrbuilder-plugin-babel/react-class-display-name';
-import transformClassProps from 'babel-plugin-transform-class-properties';
+import reactClassDisplayName from '@mrbuilder/plugin-babel/react-class-display-name';
 import babelrc from 'val-loader!./babelrc.js';
-
-
 if (!availablePlugins['./react-class-display-name']) {
     availablePlugins['./react-class-display-name'] = reactClassDisplayName;
 }
-if (!availablePlugins['transform-class-properties']){
-    availablePlugins['transform-class-properties'] = transformClassProps;
-}
+
 export function stringify(obj) {
 
     return !obj ? 'null' : JSON.stringify(obj, null, 2)
