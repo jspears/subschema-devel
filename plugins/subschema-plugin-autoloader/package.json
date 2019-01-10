@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "@mrbuilder/plugin-babel": "^4.0.0-alpha.1",
-    "@mrbuilder/plugin-babel-7": "^4.0.0-alpha.1",
+    "val-loader": "^1.1.0",
     "subschema-dev-support": "^4.0.1",
     "subschema-utils": "^4.0.1"
   },

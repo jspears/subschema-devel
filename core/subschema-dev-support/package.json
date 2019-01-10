@@ -10,9 +10,7 @@
     "@mrbuilder/plugin-version": "^4.0.0-alpha.0",
     "@mrbuilder/preset-app": "^4.0.0-alpha.0",
     "@mrbuilder/preset-lib": "^4.0.0-alpha.0",
-    "@mrbuilder/preset-test": "^4.0.0-alpha.0",
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2"
+    "@mrbuilder/preset-test": "^4.0.0-alpha.0"
   },
   "bin": {
     "subschema-babel": "bin/subschema-babel.js",

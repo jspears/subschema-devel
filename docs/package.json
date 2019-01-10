@@ -13,6 +13,7 @@
     "@mrbuilder/preset-dev": "^4.0.0-alpha.0",
     "webpack-dev-server": "^3.1.5"
   },
+
   "scripts": {
     "start:styleguide": "mrbuilder",
     "styleguide": "mrbuilder",

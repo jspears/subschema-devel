@@ -3,6 +3,12 @@
     "@mrbuilder/preset-lib",
     "subschema"
   ],
+  "plugins": [
+    [
+      "@mrbuilder/plugin-typescript",
+      false
+    ]
+  ],
   "env": {
     "mocha": {
       "presets": [
