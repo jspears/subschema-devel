@@ -18,16 +18,16 @@
   "source": "src",
   "mrbuilder": {
     "plugins": [
-      "mrbuilder-plugin-filetypes",
-      "mrbuilder-plugin-fonts",
+      "@mrbuilder/plugin-filetypes",
+      "@mrbuilder/plugin-fonts",
       [
-        "mrbuilder-plugin-css",
+        "@mrbuilder/plugin-css",
         {
           "useNameHash": false
         }
       ],
       [
-        "mrbuilder-plugin-less",
+        "@mrbuilder/plugin-less",
         {
           "modules": false
         }

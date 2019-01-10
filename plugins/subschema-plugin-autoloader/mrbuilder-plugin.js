@@ -1,5 +1,5 @@
-const OptionsManager = require('mrbuilder-optionsmanager');
-const babelConfig    = require('mrbuilder-plugin-babel/babel-config');
+const OptionsManager = require('@mrbuilder/optionsmanager');
+const babelConfig    = require('@mrbuilder/plugin-babel/babel-config');
 module.exports       = function (options, webpack, optionsManager) {
 
     const subschemaManager = new OptionsManager({

@@ -3,14 +3,14 @@
   "version": "4.0.1",
   "dependencies": {
     "lerna": "^2.11.0",
-    "mrbuilder": "^3.1.5"
+    "@mrbuilder/cli": "^4.0.0-alpha.0"
   },
   "devDependencies": {
-    "mrbuilder-plugin-doc-prop-types": "^3.1.5",
-    "mrbuilder-plugin-emeth": "^3.1.5",
-    "mrbuilder-plugin-react-styleguidist": "^3.1.5",
-    "mrbuilder-plugin-stylus": "^3.1.5",
-    "mrbuilder-preset-dev": "^3.1.5",
+    "@mrbuilder/plugin-doc-prop-types": "^4.0.0-alpha.0",
+    "@mrbuilder/plugin-emeth": "^4.0.0-alpha.0",
+    "@mrbuilder/plugin-react-styleguidist": "^4.0.0-alpha.0",
+    "@mrbuilder/plugin-stylus": "^4.0.0-alpha.0",
+    "@mrbuilder/preset-dev": "^4.0.0-alpha.0",
     "webpack-dev-server": "^3.1.5"
   },
   "scripts": {
@@ -22,20 +22,20 @@
   "mrbuilder": {
     "plugins": [
       [
-        "mrbuilder-plugin-hot",
+        "@mrbuilder/plugin-hot",
         false
       ],
       [
-        "mrbuilder-plugin-react-styleguidist",
+        "@mrbuilder/plugin-react-styleguidist",
         false
       ],
       "./src/index",
       [
-        "mrbuilder-plugin-html",
+        "@mrbuilder/plugin-html",
         false
       ],
       [
-        "mrbuilder-plugin-webpack",
+        "@mrbuilder/plugin-webpack",
         {
           "app": "examples/stylist",
           "public": "",

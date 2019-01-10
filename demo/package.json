@@ -13,7 +13,7 @@
     "subschema.wiki": "^4.0.0-b-1.6"
   },
   "devDependencies": {
-    "mrbuilder-plugin-markdown": "^3.0.1",
+    "@mrbuilder/plugin-markdown": "^4.0.0-alpha.0",
     "subschema-dev-support": "^4.0.1"
   },
   "scripts": {
@@ -51,15 +51,15 @@
       "subschema-styles-bootstrap4"
     ],
     "plugins": [
-      "mrbuilder-plugin-markdown",
+      "@mrbuilder/plugin-markdown",
       [
-        "mrbuilder-plugin-html",
+        "@mrbuilder/plugin-html",
         {
           "exported": true
         }
       ],
       [
-        "mrbuilder-plugin-webpack",
+        "@mrbuilder/plugin-webpack",
         {
           "entry": {
             "index": "./src/index"
@@ -67,7 +67,7 @@
         }
       ],
       [
-        "mrbuilder-plugin-version",
+        "@mrbuilder/plugin-version",
         {
           "module": "~subschema/package.json"
         }

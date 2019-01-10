@@ -27,21 +27,21 @@
     "plugin": "./mrbuilder-plugin.js",
     "plugins": [
       "subschema-plugin-playground",
-      "mrbuilder-plugin-babel",
+      "@mrbuilder/plugin-babel",
       "subschema-plugin-autoloader",
       "subschema-plugin-project"
     ],
     "env": {
       "development": {
         "plugins": [
-          "mrbuilder-plugin-webpack-dev-server",
+          "@mrbuilder/plugin-webpack-dev-server",
           [
-            "mrbuilder-plugin-html",
+            "@mrbuilder/plugin-html",
             {
               "exported": "ProjectWizard"
             }
           ],
-          "mrbuilder-plugin-hot"
+          "@mrbuilder/plugin-hot"
         ]
       }
     }

@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.1.3",
-    "mrbuilder-plugin-sass": "^3.1.6",
+    "@mrbuilder/plugin-sass": "^4.0.0-alpha.0",
     "subschema-transitions": "^4.0.1",
     "subschema-utils": "^4.0.1"
   },
@@ -19,15 +19,15 @@
   "source": "src",
   "mrbuilder": {
     "plugins": [
-      "mrbuilder-plugin-filetypes",
-      "mrbuilder-plugin-fonts",
+      "@mrbuilder/plugin-filetypes",
+      "@mrbuilder/plugin-fonts",
       [
-        "mrbuilder-plugin-css",
+        "@mrbuilder/plugin-css",
         {
           "useNameHash": false
         }
       ],
-      "mrbuilder-plugin-sass"
+      "@mrbuilder/plugin-sass"
     ]
   },
   "gitHead": "7102e6249fb7d12545737ed895b0d269b401f9db",

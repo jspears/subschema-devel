@@ -1,28 +1,27 @@
 {
   "plugin": "./src/plugin.js",
   "plugins": [
-    "mrbuilder-plugin-fonts",
+    "@mrbuilder/plugin-fonts",
     [
-      "mrbuilder-plugin-chunk",
+      "@mrbuilder/plugin-chunk",
       false
     ],
-    "mrbuilder-plugin-filetypes",
+    "@mrbuilder/plugin-filetypes",
     [
-      "mrbuilder-plugin-css",
+      "@mrbuilder/plugin-css",
       {
         "modules": true,
         "useNameHash": false
       }
     ],
-
-    "mrbuilder-plugin-less",
+    "@mrbuilder/plugin-less",
     "subschema-plugin-autoloader"
   ],
   "env": {
     "test": {
       "plugins": [
         [
-          "mrbuilder-plugin-css",
+          "@mrbuilder/plugin-css",
           {
             "useNameHash": "[id].[hash].style.css"
           }
@@ -31,25 +30,24 @@
     },
     "subschema-web": {
       "plugins": [
-
         [
-          "mrbuilder-plugin-version",
+          "@mrbuilder/plugin-version",
           {
             "variable": "SUBSCHEMA_VERSION"
           }
         ],
         [
-          "mrbuilder-plugin-react",
+          "@mrbuilder/plugin-react",
           false
         ],
         [
-          "mrbuilder-plugin-css",
+          "@mrbuilder/plugin-css",
           {
             "useStyleLoader": true
           }
         ],
         [
-          "mrbuilder-plugin-webpack",
+          "@mrbuilder/plugin-webpack",
           {
             "libraryTarget": "var",
             "devtool": "source-map",
@@ -67,23 +65,23 @@
     "subschema-web-debug": {
       "plugins": [
         [
-          "mrbuilder-plugin-version",
+          "@mrbuilder/plugin-version",
           {
             "variable": "SUBSCHEMA_VERSION"
           }
         ],
         [
-          "mrbuilder-plugin-react",
+          "@mrbuilder/plugin-react",
           false
         ],
         [
-          "mrbuilder-plugin-css",
+          "@mrbuilder/plugin-css",
           {
             "useStyleLoader": true
           }
         ],
         [
-          "mrbuilder-plugin-webpack",
+          "@mrbuilder/plugin-webpack",
           {
             "libraryTarget": "var",
             "devtool": "inline-source-map",
@@ -97,13 +95,13 @@
     "subschema-server": {
       "plugins": [
         [
-          "mrbuilder-plugin-version",
+          "@mrbuilder/plugin-version",
           {
             "variable": "SUBSCHEMA_VERSION"
           }
         ],
         [
-          "mrbuilder-plugin-webpack",
+          "@mrbuilder/plugin-webpack",
           {
             "library": "commonjs",
             "devtool": "source-map",
@@ -116,15 +114,15 @@
     },
     "subschema-noreact": {
       "plugins": [
-        "mrbuilder-plugin-react",
+        "@mrbuilder/plugin-react",
         [
-          "mrbuilder-plugin-version",
+          "@mrbuilder/plugin-version",
           {
             "variable": "SUBSCHEMA_VERSION"
           }
         ],
         [
-          "mrbuilder-plugin-webpack",
+          "@mrbuilder/plugin-webpack",
           {
             "libraryTarget": "umd",
             "library": "subschema",

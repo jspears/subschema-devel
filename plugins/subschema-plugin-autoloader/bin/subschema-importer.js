@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 process.env.MRBUILDER_INTERNAL_PLUGINS =
-    `${process.env.MRBUILDER_INTERNAL_PLUGINS || ''},mrbuilder-plugin-babel`;
-const OptionsManager                   = require('mrbuilder-optionsmanager');
+    `${process.env.MRBUILDER_INTERNAL_PLUGINS || ''},@mrbuilder/plugin-babel`;
+const OptionsManager                   = require('@mrbuilder/optionsmanager');
 const noop                             = () => {
 };
 global._MRBUILDER_OPTIONS_MANAGER      =
@@ -12,10 +12,10 @@ global._MRBUILDER_OPTIONS_MANAGER      =
     });
 
 const DefaultLoaderFactory = require('../src/importer');
-const babelRc              = require('mrbuilder-plugin-babel/babel-config');
+const babelRc              = require('@mrbuilder/plugin-babel/babel-config');
 
 console.log(
-    require("babel-core").transform(DefaultLoaderFactory(new OptionsManager({
+    require("@babel/core").transform(DefaultLoaderFactory(new OptionsManager({
         prefix  : 'subschema',
         info    : noop,
         warn    : noop,

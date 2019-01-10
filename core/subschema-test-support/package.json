@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "chai": "^4.1.2",
-    "mrbuilder-plugin-enzyme": "^3.1.6",
+    "@mrbuilder/plugin-enzyme": "^4.0.0-alpha.0",
     "rimraf": "^2.6.2",
     "subschema-context": "^4.0.1",
     "subschema-dev-support": "^4.0.1",
